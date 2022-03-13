@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 
 	"github.com/UncleMutu/simple-server/entity"
 )
@@ -18,4 +19,10 @@ func main() {
 	}
 
 	fmt.Println("testing print struct from vim, ", user)
+
+	testingString, err := strconv.Atoi("10")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println("testing string: ", testingString)
 }
